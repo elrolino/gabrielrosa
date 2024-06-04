@@ -1,6 +1,7 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: '/gabrielrosa',
   siteMetadata: {
     title: 'Gabriel Rosa',
     description:
@@ -30,6 +31,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+        publicPath: '/gabrielrosa/',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
