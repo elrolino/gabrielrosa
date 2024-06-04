@@ -18,13 +18,14 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 20px 0 30px 0; // Add margin-bottom here
     overflow: hidden;
     list-style: none;
 
@@ -46,9 +47,25 @@ const StyledText = styled.div`
     }
   }
 `;
+
+const StyledCaption = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 2em;
+  color: white;
+`;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
+
+  &:hover ${StyledCaption} {
+    opacity: 1;
+  }
 
   @media (max-width: 768px) {
     margin: 50px auto 0;
@@ -125,51 +142,62 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['HTML/CSS', 'Figma', 'React', 'InDesign', 'WordPress', 'Photoshop'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">About Me</h2>
+      <h2>About Me</h2>
 
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Originally coming from a background in the printing and service industries, I’ve had
+              the pleasure of contributing to the creation of consumer-ready products for a number
+              of years. My journey has taken me through creative and technical processes with
+              esteemed organizations such as Sonae, Renault, Jerónimo Martins, InnoWave, Generali
+              Group, and the University of Lisbon. While returning to university to pursue my
+              bachelor's, I discovered a deep passion for innovative design experiences and
+              developed a keen interest in Human-Computer Interaction applications, such as User
+              Experience and Cognitive Science.
+              <p>
+                My main focus these days is developing my skills as a Digital Product Designer,
+                while doing sidequests in editorial design and web development. I also freelance as
+                a video editor and copywriter for{' '}
+                <a
+                  href="https://www.alfaromeoclubedeportugal.pt/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Alfa Romeo Clube de Portugal
+                </a>{' '}
+                and volunteer as a proofreader for{' '}
+                <a href="https://www.getdailyart.com/" target="_blank" rel="noopener noreferrer">
+                  DailyArt
+                </a>{' '}
+                .
+              </p>
             </p>
-
-            <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies and tools I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
+          <p>
+            When I’m not online I might be reading, going to the gym, hanging out with my cats or
+            taking care of a lovely garden 🏡.
+          </p>
+          <p>
+            By the way, add me on{' '}
+            <a href="https://www.last.fm/user/eisteis" target="_blank" rel="noopener noreferrer">
+              Last.fm
+            </a>{' '}
+            :)
+          </p>
         </StyledText>
 
         <StyledPic>
+          {/* <StyledCaption>This is .me</StyledCaption> */}
           <div className="wrapper">
             <StaticImage
               className="img"

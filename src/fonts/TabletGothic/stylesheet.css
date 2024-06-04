@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'TabletGothicW02';
+    src: url('TabletGothicW02-Bold.woff2') format('woff2'),
+        url('TabletGothicW02-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicW02';
+    src: url('TabletGothicW02-SemiBold.woff2') format('woff2'),
+        url('TabletGothicW02-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW04';
+    src: url('TabletGothicNarrowW04-Thin.woff2') format('woff2'),
+        url('TabletGothicNarrowW04-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW02';
+    src: url('TabletGothicNarrowW02-Light.woff2') format('woff2'),
+        url('TabletGothicNarrowW02-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicW02';
+    src: url('TabletGothicW02-Regular.woff2') format('woff2'),
+        url('TabletGothicW02-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW02-SmBd';
+    src: url('TabletGothicNarrowW02-SmBd.woff2') format('woff2'),
+        url('TabletGothicNarrowW02-SmBd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW02-Rg';
+    src: url('TabletGothicNarrowW02-Rg.woff2') format('woff2'),
+        url('TabletGothicNarrowW02-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicW04';
+    src: url('TabletGothicW04-ExtraBold.woff2') format('woff2'),
+        url('TabletGothicW04-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicW04';
+    src: url('TabletGothicW04-Heavy.woff2') format('woff2'),
+        url('TabletGothicW04-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

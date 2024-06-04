@@ -15,6 +15,7 @@ import {
   IconPlayStore,
   IconStar,
   IconTwitter,
+  IconLastFM,
 } from '@components/icons';
 
 const Icon = ({ name }) => {

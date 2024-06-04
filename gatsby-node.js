@@ -85,6 +85,18 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
             test: /miniraf/,
             use: loaders.null(),
           },
+          {
+            test: /\.(ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'fonts/',
+                },
+              },
+            ],
+          },
         ],
       },
     });

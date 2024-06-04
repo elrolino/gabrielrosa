@@ -7,7 +7,7 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
+import { IconLogo } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(242, 242, 242, 0.85);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -37,9 +37,8 @@ const StyledHeader = styled.header`
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
-        transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+        // background-color: rgba(255, 255, 255, 0.85); // Comment out or remove this line
+        box-shadow: 0 10px 40px -25px var(--navy-shadow);
       `};
 
     ${props =>
@@ -47,8 +46,7 @@ const StyledHeader = styled.header`
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
-        transform: translateY(calc(var(--nav-scroll-height) * -1));
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+        box-shadow: 0 10px 40px -25px var(--navy-shadow);
       `};
   }
 `;
@@ -126,19 +124,10 @@ const StyledLinks = styled.div`
     li {
       margin: 0 5px;
       position: relative;
-      counter-increment: item 1;
       font-size: var(--fz-xs);
 
       a {
         padding: 10px;
-
-        &:before {
-          content: '0' counter(item) '.';
-          margin-right: 5px;
-          color: var(--green);
-          font-size: var(--fz-xxs);
-          text-align: right;
-        }
       }
     }
   }
@@ -185,18 +174,12 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
           <div className="logo-container">
             <IconLogo />
           </div>
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
           <div className="logo-container">
             <IconLogo />
           </div>
@@ -207,7 +190,7 @@ const Nav = ({ isHome }) => {
 
   const ResumeLink = (
     <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+      CV
     </a>
   );
 
