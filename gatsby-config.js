@@ -1,7 +1,6 @@
 const config = require('./src/config');
 
 module.exports = {
-  pathPrefix: '/gabrielrosa',
   siteMetadata: {
     title: 'Gabriel Rosa',
     description:
@@ -21,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Gabriel Rosa',
+        short_name: 'rolino',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
