@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://gabrielrosa.me/sitemap-index.xml
+Host: https://gabrielrosa.me
