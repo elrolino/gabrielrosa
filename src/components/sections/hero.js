@@ -68,7 +68,7 @@ const Hero = () => {
   const three = (
     <>
       <h3 className="big-heading">I design digital experiences.</h3>
-      <h4 className="small-heading">(sometimes I do other stuff)</h4>
+      <h4 className="small-heading">(sometimes I do other things)</h4>
     </>
   );
   const four = (
