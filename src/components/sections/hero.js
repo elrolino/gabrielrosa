@@ -80,7 +80,7 @@ const Hero = () => {
         <a href="https://www.inesctec.pt/en" target="_blank" rel="noreferrer">
           INESC TEC
         </a>
-        , while completing my master’s in Service Engineering and Management
+        , while completing my master’s in Services Engineering and Management
         <span style={{ color: '#CF1259' }}> @</span>
         {''}
         <a href="https://www.up.pt/feup/en/" target="_blank" rel="noreferrer">

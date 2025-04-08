@@ -4,7 +4,7 @@ title: 'Leonor Violeta Personal Page'
 github: 'https://github.com/pedro00chompz/leonorvioleta'
 external: 'https://leonorvioleta.com/'
 tech:
-  - React
+  - React.js
   - Wordpress
   - Reactpress
 company: 'Leonor Violeta'
