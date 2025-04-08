@@ -7,7 +7,7 @@ tech:
 company: ''
 showInProjects: true
 categories:
-  - User Experience
+  - Writing/Articles
 image: './images/ethicalConsiderations.png'
 ---
 

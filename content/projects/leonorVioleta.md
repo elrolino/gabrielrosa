@@ -1,5 +1,5 @@
 ---
-date: '2024-04-01'
+date: '2024-02-01'
 title: 'Leonor Violeta Personal Page'
 github: 'https://github.com/pedro00chompz/leonorvioleta'
 external: 'https://leonorvioleta.com/'
@@ -10,6 +10,7 @@ tech:
 company: 'Leonor Violeta'
 showInProjects: true
 categories:
+  - Product Design
   - Web Development
 image: './images/violeta.png'
 ---

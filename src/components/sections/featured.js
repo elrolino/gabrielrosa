@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -201,11 +201,10 @@ const StyledProject = styled.li`
 
 const categories = [
   'All',
-  'Editorial Design',
   'Graphic Design',
   'Product Design',
-  'User Experience',
   'Web Development',
+  'Writing/Articles',
 ];
 
 const Projects = () => {
@@ -245,7 +244,7 @@ const Projects = () => {
     }
   `);
 
-  const [showMore, setShowMore] = useState(false);
+  const [showMore] = useState(false);
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
@@ -268,10 +267,11 @@ const Projects = () => {
 
   // Filter projects based on the selected category
   const filteredProjects = projectsToShow.filter(({ node }) => {
+    const categories = node.frontmatter.categories || []; // Ensure categories is an array
     return (
       selectedCategories.size === 0 ||
       selectedCategories.has('All') ||
-      node.frontmatter.categories.some(category => selectedCategories.has(category))
+      categories.some(category => selectedCategories.has(category))
     );
   });
 

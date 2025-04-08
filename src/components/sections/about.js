@@ -152,25 +152,17 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Originally coming from a background in the printing and service industries, I’ve had
-              the pleasure of contributing to the creation of consumer-ready products for a number
-              of years. My journey has taken me through creative and technical processes with
-              esteemed organizations such as Sonae, Renault, Jerónimo Martins, InnoWave, Generali
-              Group, and the University of Lisbon. While returning to university to pursue my
-              bachelor's, I discovered a deep passion for innovative design experiences and
-              developed a keen interest in Human-Computer Interaction applications, such as User
-              Experience and Cognitive Science.
+              With a background in the printing and service industries, I’ve worked on
+              consumer-facing products for companies like Sonae, Renault, and Jerónimo Martins.
+              While completing my bachelor’s in Multimedia and Communication Technologies, I became
+              deeply interested in Human-Computer Interaction — especially UX and Cognitive Science.
               <p>
-                My main focus these days is developing my skills as a Digital Product Designer,
-                while doing sidequests in editorial design and web development. I also freelance as
-                a video editor and copywriter for{' '}
-                <a
-                  href="https://www.alfaromeoclubedeportugal.pt/"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Alfa Romeo Clube de Portugal
-                </a>{' '}
-                and volunteer as a proofreader for{' '}
+                Now, I’m exploring how digital product design and service design can come together
+                to create more thoughtful, human-centered systems.{' '}
+              </p>
+              <p>
+                I also freelance as a video editor and copywriter, and contribute as a volunteer
+                proofreader for{' '}
                 <a href="https://www.getdailyart.com/" target="_blank" rel="noopener noreferrer">
                   DailyArt
                 </a>{' '}
@@ -184,8 +176,9 @@ const About = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
           <p>
-            When I’m not online I might be reading, going to the gym, hanging out with my cats or
-            taking care of a lovely garden 🏡.
+            When I’m not online I'll usually be either reading, doing some exercise outside or at
+            the gym, going to music shows, hanging out with my friends or just enjoying a lovely
+            garden 🏡.
           </p>
           <p>
             By the way, add me on{' '}

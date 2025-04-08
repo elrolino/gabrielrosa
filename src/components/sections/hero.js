@@ -67,18 +67,24 @@ const Hero = () => {
   );
   const three = (
     <>
-      <h3 className="big-heading">I design digital experiences.</h3>
+      <h3 className="big-heading">I plan and design digital experiences.</h3>
       <h4 className="small-heading">(sometimes I do other things)</h4>
     </>
   );
   const four = (
     <>
       <p>
-        I’m a digital product designer and a service design enthusiast, based in Porto 🇵🇹.
-        Currently, I’m finishing my bachelor's degree in Multimedia and Communication Technologies
-        <span style={{ color: '#CF1259' }}> @</span>{''}
-        <a href="https://www.ua.pt/en/" target="_blank" rel="noreferrer">
-          University of Aveiro
+        Currently based in Porto 🇵🇹, I'm working on innovation-driven research
+        <span style={{ color: '#CF1259' }}> @</span>
+        {''}
+        <a href="https://www.inesctec.pt/en" target="_blank" rel="noreferrer">
+          INESC TEC
+        </a>
+        , while completing my master’s in Service Engineering and Management
+        <span style={{ color: '#CF1259' }}> @</span>
+        {''}
+        <a href="https://www.up.pt/feup/en/" target="_blank" rel="noreferrer">
+          FEUP
         </a>
         .
       </p>

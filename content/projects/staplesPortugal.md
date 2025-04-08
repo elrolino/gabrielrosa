@@ -7,9 +7,8 @@ tech:
   - CorelDRAW
   - Illustrator
 company: ''
-showInProjects: true
+showInProjects: false
 categories:
-  - Graphic Design
   - Editorial Design
 image: './images/staples.png'
 ---
