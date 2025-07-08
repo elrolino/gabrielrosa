@@ -142,7 +142,14 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['HTML/CSS', 'Figma', 'React', 'InDesign', 'WordPress', 'Photoshop'];
+  const skills = [
+    'Design Thinking',
+    'User Research',
+    'Requirements Gathering',
+    'Miro',
+    'Figma',
+    'Usability Testing',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -152,34 +159,31 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              With a background in the printing and service industries, I’ve worked on
-              consumer-facing products for companies like Sonae, Renault, and Jerónimo Martins.
-              While completing my bachelor’s in Multimedia and Communication Technologies, I became
-              deeply interested in Human-Computer Interaction — especially UX and Cognitive Science.
+              My journey into understanding people and systems began in client-facing roles within
+              the printing and service industries, where I developed an sense for real-world needs.
+              This led me to a deep fascination with Human-Computer Interaction, and how truly
+              human-centered approaches can shape our digital experiences.
               <p>
-                Now, I’m exploring how digital product design and service design can come together
-                to create more thoughtful, human-centered systems.{' '}
-              </p>
-              <p>
-                I also freelance as a video editor and copywriter, and contribute as a volunteer
-                proofreader for{' '}
-                <a href="https://www.getdailyart.com/" target="_blank" rel="noopener noreferrer">
-                  DailyArt
-                </a>{' '}
-                .
+                Now, I’m focused on exploring how user-centric design and service strategy can
+                converge to create thoughtful, innovative, and sustainable systems{' '}
               </p>
             </p>
-            <p>Here are a few technologies and tools I’ve been working with recently:</p>
+            <p>Here are a few tools and processes I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
           <p>
-            When I’m not online I'll usually be either reading, doing some exercise outside or at
-            the gym, going to music shows, hanging out with my friends or just enjoying a lovely
-            garden 🏡.
+            Beyond research and design, I freelance as a video editor and copywriter, and volunteer
+            as a proofreader for{' '}
+            <a href="https://www.getdailyart.com/" target="_blank" rel="noopener noreferrer">
+              DailyArt
+            </a>
+            {''}. When not online, I'm usually reading, staying active outdoors or at the gym, or
+            enjoying a lovely garden 🏡.
           </p>
+
           <p>
             By the way, add me on{' '}
             <a href="https://www.last.fm/user/eisteis" target="_blank" rel="noopener noreferrer">

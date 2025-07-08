@@ -44,18 +44,6 @@ const StyledProjectsSection = styled.section`
   }
 `;
 
-const StyledCategory = styled.label`
-  ${({ theme }) => theme.mixins.smallButton};
-  margin-left: 15px;
-  font-size: var(--fz-xs);
-  color: ${props => (props.isFocused ? 'var(--slate)' : 'var(--green)')};
-  background-color: ${props => (props.isFocused ? 'var(--pink06)' : 'transparent')};
-
-  input {
-    display: none;
-  }
-`;
-
 const StyledProject = styled.li`
   position: relative;
   cursor: default;
@@ -199,16 +187,8 @@ const StyledProject = styled.li`
   }
 `;
 
-const categories = ['All', 'Graphic Design', 'Product Design', 'Web Development', 'Writing'];
-
 const Projects = () => {
-  const [selectedCategories, setSelectedCategories] = useState(new Set(['All']));
-
-  const toggleCategory = category => {
-    const newSelectedCategories = new Set();
-    newSelectedCategories.add(category);
-    setSelectedCategories(newSelectedCategories);
-  };
+  const [selectedCategories] = useState(new Set(['All']));
 
   const data = useStaticQuery(graphql`
     query {
@@ -326,9 +306,8 @@ const Projects = () => {
       <StyledProjectsSection>
         <h2 ref={revealTitle}>Selected Works and Projects</h2>
 
-        {/* Add checkboxes for each category */}
         <div>
-          {categories.map(category => (
+          {/*categories.map(category => (
             <StyledCategory key={category} isFocused={selectedCategories.has(category)}>
               <input
                 type="radio"
@@ -339,7 +318,7 @@ const Projects = () => {
               />
               {category}
             </StyledCategory>
-          ))}
+          ))*/}
         </div>
 
         <ul className="projects-grid">

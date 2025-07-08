@@ -8,7 +8,7 @@ tech:
   - Wordpress
   - Reactpress
 company: 'Leonor Violeta'
-showInProjects: true
+showInProjects: false
 categories:
   - Product Design
   - Web Development

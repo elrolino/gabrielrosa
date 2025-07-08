@@ -50,6 +50,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^5.1.0",
     "gatsby-remark-prismjs": "^5.1.0",
+    "gatsby-remark-relative-images": "^2.0.5",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-remark": "^4.1.0",
     "gatsby-transformer-sharp": "^3.4.0",

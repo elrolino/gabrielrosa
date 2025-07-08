@@ -6,7 +6,7 @@ external: 'https://pitch.com/v/dailystone-f325c4'
 tech:
   - Figma
 company: ''
-showInProjects: True
+showInProjects: false
 categories:
   - Product Design
 image: './images/dailyStone.png'

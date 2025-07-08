@@ -72,6 +72,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              staticFolderName: 'static', // or leave default if not using /static
+            },
+          },
+          {
             // https://www.gatsbyjs.org/packages/gatsby-remark-external-links
             resolve: 'gatsby-remark-external-links',
             options: {
