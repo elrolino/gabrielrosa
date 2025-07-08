@@ -199,13 +199,7 @@ const StyledProject = styled.li`
   }
 `;
 
-const categories = [
-  'All',
-  'Graphic Design',
-  'Product Design',
-  'Web Development',
-  'Writing/Articles',
-];
+const categories = ['All', 'Graphic Design', 'Product Design', 'Web Development', 'Writing'];
 
 const Projects = () => {
   const [selectedCategories, setSelectedCategories] = useState(new Set(['All']));

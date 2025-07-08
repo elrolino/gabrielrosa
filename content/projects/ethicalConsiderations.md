@@ -7,8 +7,8 @@ tech:
 company: ''
 showInProjects: true
 categories:
-  - Writing/Articles
+  - Writing
 image: './images/ethicalConsiderations.png'
 ---
 
-Article on the ethical challenges and considerations in designing ubiquitous computing technologies, for the course 'Interaction Fundamentals'.
+Article on the ethical challenges and considerations in designing ubiquitous computing technologies.
